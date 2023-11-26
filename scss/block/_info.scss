@@ -1,0 +1,137 @@
+.info__container {
+    padding-top: 220px;
+}
+
+.info__img1 {
+    display: none;
+}
+
+.info__img2 {
+    display: none;
+}
+
+.info__title {
+    display: block;
+    color: #FEFCF7;
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px;
+    margin-bottom: 32px;
+    margin-right: auto;
+}
+
+.info__img {
+    border-radius: 10px;
+}
+
+.info__block {
+    max-width: 1280px;
+    height: 562px;
+    display: flex;
+    justify-content: space-around;
+    background-repeat: no-repeat;
+    background-image: url(/images/info-block-bg.png);
+    background-size: 100% 85%;
+    background-position: bottom center;
+}
+
+.info__frame {
+    margin-top: 87px;
+    height: 474px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info__text {
+    max-width: 540px;
+    color: #FEFCF7;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    opacity: 0.8;
+}
+
+@media screen and (max-width:1050px) {
+    .info__title {
+        font-size: 32px;
+    }
+
+    .info__text {
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width:970px) {
+    .info__img {
+        display: none;
+    }
+
+    .info__frame {
+        margin-top: 0;
+    }
+
+    .info__img1 {
+        display: inline-block;
+        border-radius: 10px;
+    }
+
+    .info__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info__title {
+        margin-top: 67px;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .info__text {
+        max-width: 540px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .info__block {
+        height: 648px;
+        background-size: 100% 75%;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .info__block {
+        padding-bottom: 61px;
+        height: 587px;
+        background-repeat: no-repeat;
+        background-image: url(/images/info-block-bg2.png);
+        background-size: 100% 90%;
+    }
+
+    .info__img1 {
+        display: none;
+    }
+
+    .info__img2 {
+        display: inline-block;
+        border-radius: 10px;
+    }
+
+    .info__title {
+        margin-top: 64px;
+        margin-bottom: 24px;
+        max-width: 279px;
+        font-size: 28px;
+    }
+
+    .info__text {
+        max-width: 279px;
+    }
+}

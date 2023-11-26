@@ -1,0 +1,128 @@
+.canada__container {
+    max-width: 1085px;
+    padding-top: 122px;
+}
+
+.canada__title {
+    color: #83888F;
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+    margin-bottom: 72px;
+}
+
+.canada__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.canada__text {
+    color: #333D4B;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.canada__sub {
+    color: #333D4B;
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 36px;
+    margin-bottom: 23px;
+
+    &::before {
+        content: "";
+        max-width: 40px;
+        height: 49px;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(/images/canada-d1.svg);
+        margin-bottom: 46px;
+
+    }
+}
+
+.canada__sub2 {
+    color: #333D4B;
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 36px;
+    margin-bottom: 23px;
+
+    &::before {
+        content: "";
+        max-width: 40px;
+        height: 49px;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(/images/canada-d2.svg);
+        margin-bottom: 46px;
+    }
+}
+
+.canada__sub3 {
+    color: #333D4B;
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 36px;
+    margin-bottom: 23px;
+
+    &::before {
+        content: "";
+        max-width: 45px;
+        height: 49px;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(/images/canada-d3.svg);
+        margin-bottom: 46px;
+    }
+}
+
+.canada__item {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width:650px) {
+    .canada__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .canada__item {
+        margin-top: 80px;
+        align-items: center;
+    }
+
+    .canada__sub {
+        &::before{
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+
+    .canada__sub2 {
+        &::before{
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+
+    .canada__sub3 {
+        &::before{
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+
+    .canada__title{
+        text-align: center;
+    }
+}
